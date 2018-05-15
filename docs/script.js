@@ -1,5 +1,5 @@
 var geojson = new XMLHttpRequest();
-geojson.open("GET", "https://raw.githubusercontent.com/jonnyrobbie/gpx2json/master/jonnyrobbie.geojson");
+geojson.open("GET", "https://raw.githubusercontent.com/Roldans/gpx2json/master/ANDALUCIA%3A%20Cebadillas%20-%20Refugio%20Poquera%20-%20Mulhacen%20-%20Acequia.geojson");
 geojson.addEventListener("load", geojsonLoaded);
 geojson.send()
 
@@ -25,7 +25,7 @@ function geojsonLoaded() {
 			feature.properties.type);
 	}
 	
-	var mymap = L.map('mapid').setView([48.843, 17.298], 7);
+	var mymap = L.map('mapid').setView([37.6,  -4.5], 8.5);
 	//L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 	L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors | ' + featuresObject.features.length + ' caches found'
